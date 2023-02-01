@@ -1,6 +1,6 @@
-$rfs-rem-value: 16 !default;
+$rfs-rem-value: 15 !default;
 $em-base: $rfs-rem-value * 1px;
-$small: rem(14);
+$small: rem(11);
 $url: '../img/';
 $path2: '@2x/';
 $path1: '@1x/';
@@ -14,7 +14,7 @@ $rfs-breakpoint: 1200px !default;
 
 $font-family-sans-serif: $default-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; 
 
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace: 'Gilroy' ,SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -24,15 +24,15 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-100: #FFE9C8;
+$gray-200: #FD9801;
+$gray-300: #DB9F5A;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-700: #917B5A;
+$gray-800: #4B4928;
+$gray-900: #814500;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -315,14 +315,14 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $gray-900 !default;
+$secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$dark:          $blue !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -446,8 +446,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
-$body-bg:                   $white !default;
+$body-color:                $gray-800 !default;
+$body-bg:                   $gray-100 !default;
 
 $body-emphasis-color:       $black !default;
 
@@ -491,7 +491,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1440px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -509,7 +509,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1440px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -526,7 +526,7 @@ $grid-row-columns:            6 !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width !default;
+$container-padding-x: rem(32) !default;
 
 
 // Components
@@ -623,12 +623,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                rem(80) !default;
 $h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h3-font-size:                rem(60) !default;
+$h4-font-size:                rem(32) !default;
+$h5-font-size:                rem(24) !default;
+$h6-font-size:                rem(20) !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -644,10 +644,10 @@ $font-sizes: (
 
 // scss-docs-start headings-variables
 $headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family:        null !default;
+$headings-font-family:        $font-family-monospace !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-font-weight:        700 !default;
+$headings-line-height:        0.968em !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 

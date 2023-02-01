@@ -2,12 +2,24 @@
 :root {
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
-
+	@include media-breakpoint-up(xl) {
+		--bs-body-font-size: #{$em-base};
+		.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+			--bs-gutter-x: #{rem(80)};
+			max-width: calc(1140px + var(--bs-gutter-x));
+		}
+	}
+	@include media-breakpoint-up(xxl) {
+		.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+			max-width: calc(1360px + var(--bs-gutter-x));
+		}
+	}
 	@include media-breakpoint-up(md) {
 
 		--sPT: #{rem(80)};
 		--sPB: #{rem(90)};
 		--sTPB: #{rem(40)};
+
 	}
 
 	--sPT: #{rem(80 * .5)};
