@@ -17,17 +17,21 @@ mixin mob-mnu()
 		+e.inner
 			+mnu()
 	//  мобильное меню
-mixin top-nav() 
+mixin top-nav(light) 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
-				.col.order-lg-0.order-last
+			+e.row.row
+				.col-12.col-lg-6.order-last.order-lg-first
+					+e.logo(href='#')
+						+img(`img/svg/${light ? "light-logo.svg" : "dark-logo.svg"}`)
+				+e.col.col.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							+menu-toggle()
 							+mnu()
-					
-				.col-auto.d-lg-none
+				.col.col-lg-auto.d-lg-none
 					+menu-toggle()
+				.col-auto
+					+e.btn.btn.btn-outline-light.base-btn(href='#') Бронирование
 	// end top-nav

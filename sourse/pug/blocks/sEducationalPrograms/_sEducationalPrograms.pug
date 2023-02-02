@@ -1,0 +1,18 @@
+mixin sEducationalPrograms(data)
+	// start sEducationalPrograms
+	+b.SECTION.sEducationalPrograms.section#sEducationalPrograms&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Образовательные программы
+			+ddGroup
+				+ddGroupItem('Заголовок для образовательной программы ')
+					+infoCard()
+				+ddGroupItem('Заголовок для образовательной программы в одну или несколько строк для наглядности отображения')
+					+infoCard()
+				+ddGroupItem('Заголовок для образовательной программы ')
+					+infoCard()
+				+ddGroupItem('Готовка в полевых условиях', 'active')
+					+infoCard()
+				+ddGroupItem('Образовательная программа')
+					+infoCard()
+	// end sEducationalPrograms

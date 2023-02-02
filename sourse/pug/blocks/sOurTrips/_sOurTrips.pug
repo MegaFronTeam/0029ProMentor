@@ -1,0 +1,37 @@
+mixin sOurTrips(data)
+	// start sOurTrips
+	+b.SECTION.sOurTrips.section#sOurTrips&attributes(attributes)
+		+e.container.container
+			+img('img/svg/bg-line-1.svg').line
+			+e.slider--js.swiper
+				+b.section-title
+					+e.row.row
+						.col-lg
+							h2 Наши походы
+						.col-lg-auto
+							+e.arrow
+								+arrow
+					.row
+						.col-auto
+							+e.link.active(href='#') Будущие
+						.col-auto
+							+e.link(href='#') Уже прошли
+				.swiper-wrapper
+					+e.slide.swiper-slide
+						+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+					+e.slide.swiper-slide
+						+card('card-img-2.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+					+e.slide.swiper-slide
+						+card('card-img-3.jpg', 'Молодость против мудрости')
+					+e.slide.swiper-slide
+						+card('card-img-4.jpg', 'Слабоумие и отвага')
+					+e.slide.swiper-slide
+						+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+					+e.slide.swiper-slide
+						+card('card-img-2.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+					+e.slide.swiper-slide
+						+card('card-img-3.jpg', 'Молодость против мудрости')
+					+e.slide.swiper-slide
+						+card('card-img-4.jpg', 'Слабоумие и отвага')
+			+e.btn.btn.btn-outline-primary.base-btn(href='#') Посмотреть все
+	// end sOurTrips

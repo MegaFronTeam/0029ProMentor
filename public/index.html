@@ -13,269 +13,538 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page">
+	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
 			<!-- start header-->
-			<header class="header" id="header">
+			<header class="header header--light" id="header">
 				<!-- start top-nav-->
 				<div class="top-nav block-with-lazy">
 					<div class="container">
-						<div class="row">
-							<div class="col order-lg-0 order-last">
+						<div class="top-nav__row row">
+							<div class="col-12 col-lg-6 order-last order-lg-first">
+								<a class="top-nav__logo" href="#"><img src="img/svg/light-logo.svg" alt="" loading="lazy"/>
+								</a>
+							</div>
+							<div class="top-nav__col col order-lg-0 order-last">
 								<div class="menu-mobile menu-mobile--js">
 									<div class="menu-mobile__inner">
 										<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
 										</div>
 										<nav>
 											<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Главная</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Походы</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Образовательные программы</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О нас</a></li>
 											</ul>
 										</nav>
 									</div>
 								</div>
 							</div>
-							<div class="col-auto d-lg-none">
+							<div class="col col-lg-auto d-lg-none">
 								<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
 								</div>
+							</div>
+							<div class="col-auto">
+								<a class="top-nav__btn btn btn-outline-light base-btn" href="#">Бронирование
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- end top-nav-->
-				<!-- start topLine-->
-				<div class="topLine section" id="topLine">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>topLine</h2>
-						</div>
-						<div class="row"></div>
-					</div>
-				</div>
-				<!-- end topLine-->
 			</header>
 			<!-- end header-->
 			<main>
 				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-						</div>
-						<div class="row"></div>
+				<div class="headerBlock section bg-wrap" id="headerBlock">
+					<div class="headerBlock__img-wrap picture-bg"><img class="object-fit-js" src="img/headerBlock-bg.jpg" alt="" loading="lazy"/>
 					</div>
-				</div>
-				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
+					<div class="headerBlock__container container">
+						<div class="section-title">
+							<h1><span class="start">Самые</span> интересные походы.<br>Максимум разнообразия <span class="end">и увлечений</span>  </h1>
 						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+						<div class="headerBlock__row row">
+							<div class="col-lg-6 ms-lg-auto">
+								<div class="headerBlock__name">Бронируйте<br>места
+								</div>
+								<p>&laquo;В&nbsp;яркий путь&raquo;&nbsp;&mdash; это туристическо-патриотический клуб, который обучает навыкам выживания, развития самоорганизации, самодисциплины, расширения кругозора, познания в&nbsp;области географии и&nbsp;исторических аспектов нашей страны</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- end sCatalog-->
-				<!-- start sForm-->
-				<section class="sForm section" id="sForm">
+				<!-- end headerBlock-->
+				<!-- start sOurTrips-->
+				<section class="sOurTrips section" id="sOurTrips">
+					<div class="sOurTrips__container container"><img class="line" src="img/svg/bg-line-1.svg" alt="" loading="lazy"/>
+						<div class="sOurTrips__slider sOurTrips__slider--js swiper">
+							<div class="section-title">
+								<div class="section-title__row row">
+									<div class="col-lg">
+										<h2>Наши походы</h2>
+									</div>
+									<div class="col-lg-auto">
+										<div class="section-title__arrow">
+											<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+												<svg class="icon icon-arrow-left ">
+													<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+												</svg>
+											</div>
+											<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+												<svg class="icon icon-arrow-right ">
+													<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-auto">
+										<a class="section-title__link active" href="#">Будущие
+										</a>
+									</div>
+									<div class="col-auto">
+										<a class="section-title__link" href="#">Уже прошли
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-1.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Незабываемые леса подмосковья</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-2.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Древняя россия. Истории и ламповые посиделки у костра</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-3.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Молодость против мудрости</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-4.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Слабоумие и отвага</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-1.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Незабываемые леса подмосковья</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-2.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Древняя россия. Истории и ламповые посиделки у костра</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-3.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Молодость против мудрости</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="sOurTrips__slide swiper-slide">
+									<a class="card bg-wrap" href="#"><img class="object-fit-js picture-bg" src="img/card-img-4.jpg" alt="" loading="lazy"/>
+										<div class="card__wrap">
+											<div class="h6">Слабоумие и отвага</div>
+											<div class="card__text-wrap">
+												<p>Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании</p>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="card__date">24 - 28 мая 2023
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="card__count">
+														<svg class="icon icon-users ">
+															<use xlink:href="img/svg/sprite.svg#users"></use>
+														</svg>42
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="sOurTrips__btn btn btn-outline-primary base-btn" href="#">Посмотреть все
+						</a>
+					</div>
+				</section>
+				<!-- end sOurTrips-->
+				<!-- start sEducationalPrograms-->
+				<section class="sEducationalPrograms section" id="sEducationalPrograms">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
+						<div class="section-title">
+							<h2>Образовательные программы</h2>
 						</div>
-						<div class="sForm__row row">
-						</div>
-						<div class="form-wrap">
-							<form>
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="" type="text" placeholder=""/>
+						<div class="dd-group dd-group-js">
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<h6>Заголовок для образовательной программы </h6>
+									<p>Для детей от 3 до 8 лет</p>
 								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="" type="text" placeholder=""/>
+								<div class="dd-group__content dd-content-js">
+									<div class="info-card">
+										<div class="row">
+											<div class="col-lg-6"><img src="img/info-card-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="col-lg-6">
+												<div class="info-card__wrap">
+													<p>Вы хотите пойти в поход но не знаете<br>с чего начать? Спросите нас, мы поможем вам подобрать идеальный вариант, исходя из ваших навыков. Поможем подобрать программу как для семьи так и для большой компанииДля оплаты товара, стоимость которого превышает номинал подарочной карты, покупатель без проблем может пополнить свою карту до нужной суммы</p>
+													<a class="info-card__btn btn btn-outline-primary base-btn" href="#">Узнать больше
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="" type="text" placeholder=""/>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<h6>Заголовок для образовательной программы в одну или несколько строк для наглядности отображения</h6>
+									<p>Для детей от 3 до 8 лет</p>
 								</div>
-								<!-- +e.input-wrap-->
-							</form>
+								<div class="dd-group__content dd-content-js">
+									<div class="info-card">
+										<div class="row">
+											<div class="col-lg-6"><img src="img/info-card-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="col-lg-6">
+												<div class="info-card__wrap">
+													<p>Вы хотите пойти в поход но не знаете<br>с чего начать? Спросите нас, мы поможем вам подобрать идеальный вариант, исходя из ваших навыков. Поможем подобрать программу как для семьи так и для большой компанииДля оплаты товара, стоимость которого превышает номинал подарочной карты, покупатель без проблем может пополнить свою карту до нужной суммы</p>
+													<a class="info-card__btn btn btn-outline-primary base-btn" href="#">Узнать больше
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<h6>Заголовок для образовательной программы </h6>
+									<p>Для детей от 3 до 8 лет</p>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="info-card">
+										<div class="row">
+											<div class="col-lg-6"><img src="img/info-card-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="col-lg-6">
+												<div class="info-card__wrap">
+													<p>Вы хотите пойти в поход но не знаете<br>с чего начать? Спросите нас, мы поможем вам подобрать идеальный вариант, исходя из ваших навыков. Поможем подобрать программу как для семьи так и для большой компанииДля оплаты товара, стоимость которого превышает номинал подарочной карты, покупатель без проблем может пополнить свою карту до нужной суммы</p>
+													<a class="info-card__btn btn btn-outline-primary base-btn" href="#">Узнать больше
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item active">
+								<div class="dd-group__head dd-head-js">
+									<h6>Готовка в полевых условиях</h6>
+									<p>Для детей от 3 до 8 лет</p>
+								</div>
+								<div class="dd-group__content dd-content-js active">
+									<div class="info-card">
+										<div class="row">
+											<div class="col-lg-6"><img src="img/info-card-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="col-lg-6">
+												<div class="info-card__wrap">
+													<p>Вы хотите пойти в поход но не знаете<br>с чего начать? Спросите нас, мы поможем вам подобрать идеальный вариант, исходя из ваших навыков. Поможем подобрать программу как для семьи так и для большой компанииДля оплаты товара, стоимость которого превышает номинал подарочной карты, покупатель без проблем может пополнить свою карту до нужной суммы</p>
+													<a class="info-card__btn btn btn-outline-primary base-btn" href="#">Узнать больше
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<h6>Образовательная программа</h6>
+									<p>Для детей от 3 до 8 лет</p>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="info-card">
+										<div class="row">
+											<div class="col-lg-6"><img src="img/info-card-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="col-lg-6">
+												<div class="info-card__wrap">
+													<p>Вы хотите пойти в поход но не знаете<br>с чего начать? Спросите нас, мы поможем вам подобрать идеальный вариант, исходя из ваших навыков. Поможем подобрать программу как для семьи так и для большой компанииДля оплаты товара, стоимость которого превышает номинал подарочной карты, покупатель без проблем может пополнить свою карту до нужной суммы</p>
+													<a class="info-card__btn btn btn-outline-primary base-btn" href="#">Узнать больше
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
-				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
+				<!-- end sEducationalPrograms-->
+				<!-- start sGalleryBlock-->
+				<section class="sGalleryBlock section" id="sGalleryBlock">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
-						</div>
-						<div class="sContact__row row">
+						<div class="sGalleryBlock__wrap">
+							<div class="sGalleryBlock__slider sGalleryBlock__slider--js swiper">
+								<div class="section-title">
+									<div class="row align-items-end">
+										<div class="col">
+											<h2>Немного наших <span>Фотографий</span></h2>
+										</div>
+										<div class="col-auto d-none d-lg-block">
+											<div class="section-title__arrow-wrap">
+												<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+													<svg class="icon icon-arrow-left ">
+														<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+													</svg>
+												</div>
+												<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+													<svg class="icon icon-arrow-right ">
+														<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper">
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 255; --sHeight: 292;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-2.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 583; --sHeight: 246;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 255; --sHeight: 361;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-3.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 255; --sHeight: 246;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-4.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 255; --sHeight: 292;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-2.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 583; --sHeight: 246;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 255; --sHeight: 361;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-3.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+										<div class="sGalleryBlock__slide swiper-slide" style="--sWidth: 255; --sHeight: 246;">
+											<div class="sGalleryBlock__img-wrap">
+												<div class="img-wrap-center"><img class="object-fit-js" src="img/sGalleryBlock-img-4.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<p>Поход в подмосковье</p>
+										</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
-				<!-- end sContact-->
+				<!-- end sGalleryBlock-->
 			</main>
-			<footer class="footer section">
+			<footer class="footer section"><img class="logo" src="img/svg/logo-lg.svg" alt="" loading="lazy"/>
 				<div class="container">
 					<div class="row">
-						<div class="col"></div>
-						<div class="col">Footer</div>
-						<div class="col"></div>
-						<div class="col-auto"></div>
+						<div class="col-lg-6 order-2 order-lg-1">
+							<ul>
+								<li><a href="#">Походы</a></li>
+								<li><a href="#">Образовательные программы</a></li>
+								<li><a href="#">О нас</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-auto ms-lg-auto order-1 order-lg-2">
+							<a class="footer__btn btn btn-outline-primary base-btn" href="#">Бронирование
+							</a>
+						</div>
+						<div class="col-lg-6 order-3 order-lg-3">
+							<a class="footer__tel" href="tel:89785698899">8 978 569 88 99
+							</a>
+						</div>
+						<div class="col-lg-auto ms-lg-auto order-4 order-lg-4">
+							<a class="footer__email" href="mailto:sample@sample.com">sample@sample.com
+							</a>
+						</div>
+						<div class="col-lg-6 order-5 order-lg-5">
+							<div class="footer__caption">Копирование материала запрещено законом. Все авторские права защищены. © <span> </span>
+							</div>
+						</div>
+						<div class="col-lg-auto ms-lg-auto order-last">
+							<div class="footer__inner-row row">
+								<div class="col-auto">
+									<a class="footer__link" href="#">Оферта
+									</a>
+								</div>
+								<div class="col-auto">
+									<a class="footer__link" href="#">Политика конфиденциальности
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</footer>

@@ -1,0 +1,30 @@
+mixin sGalleryBlock(data)
+	// start sGalleryBlock
+	+b.SECTION.sGalleryBlock.section#sGalleryBlock&attributes(attributes)
+		.container
+			+e.wrap
+				+e.slider--js.swiper
+					+b.section-title
+						.row.align-items-end
+							.col
+								h2 Немного наших 
+									span Фотографий
+							.col-auto.d-none.d-lg-block
+								+e.arrow-wrap
+									+arrow
+					.swiper-wrapper
+						mixin slide(img, text, width, height)
+							+e.slide.swiper-slide(style=`--sWidth: ${width}; --sHeight: ${height};`)
+								+e.img-wrap
+									.img-wrap-center
+										+img(`img/${img}`, 'bg')
+								p!= text
+						+slide('sGalleryBlock-img-2.jpg', 'Поход в подмосковье', '255', '292')
+						+slide('sGalleryBlock-img-1.jpg', 'Поход в подмосковье', '583', '246')
+						+slide('sGalleryBlock-img-3.jpg', 'Поход в подмосковье', '255', '361')
+						+slide('sGalleryBlock-img-4.jpg', 'Поход в подмосковье', '255', '246')
+						+slide('sGalleryBlock-img-2.jpg', 'Поход в подмосковье', '255', '292')
+						+slide('sGalleryBlock-img-1.jpg', 'Поход в подмосковье', '583', '246')
+						+slide('sGalleryBlock-img-3.jpg', 'Поход в подмосковье', '255', '361')
+						+slide('sGalleryBlock-img-4.jpg', 'Поход в подмосковье', '255', '246')
+	// end sGalleryBlock

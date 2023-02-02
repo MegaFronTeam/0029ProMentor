@@ -261,12 +261,12 @@ const JSCCommon = {
 								$(this).toggleClass('active');
 							});
 						}
-						else {
-							$(this.parentElement).removeClass('active');
-							$(this.parentElement).find('.dd-content-js').slideUp(function () {
-								$(this).removeClass('active');
-							});
-						}
+						// else {
+						// 	$(this.parentElement).removeClass('active');
+						// 	$(this.parentElement).find('.dd-content-js').slideUp(function () {
+						// 		$(this).removeClass('active');
+						// 	});
+						// }
 					});
 
 				});
@@ -307,6 +307,7 @@ function eventHandler() {
 	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
+	JSCCommon.getCurrentYear('.footer__caption span');
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
 	
@@ -369,16 +370,23 @@ function eventHandler() {
 		watchOverflow: true
 	});
 	
-	const swiper4 = new Swiper('.sBanners__slider--js', {
-		// slidesPerView: 5,
-		...defaultSl,
+
+	const swiper4 = new Swiper('.sGalleryBlock__slider--js', {
 		slidesPerView: 'auto',
 		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
+		navigation: {
+			nextEl: '.sGalleryBlock__slider--js .swiper-button-next',
+			prevEl: '.sGalleryBlock__slider--js .swiper-button-prev',
+		},
+	});
 
+	const sOurTripsSwiper = new Swiper('.sOurTrips__slider--js', {
+		slidesPerView: 'auto',
+		freeMode: true,
+		navigation: {
+			nextEl: '.sOurTrips__slider--js .swiper-button-next',
+			prevEl: '.sOurTrips__slider--js .swiper-button-prev',
+		},
 	});
 
 	// modal window

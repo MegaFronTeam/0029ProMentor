@@ -1,7 +1,48 @@
 
-	// start .header
-	.header {
-		 
+// start .header
+.header {
+	&--light {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.top-nav {
+			.menu {
+				&-item {
+					a {
+						// color: #fff;
+						@include media-breakpoint-up(lg) {
+							color: #fff;
+						}
+						&:hover {
+							color: $gray-200;
+						}
+					}
+				}
+			}
+			&__logo {
+				position: relative;
+				z-index: 10;
+			}
+			&__btn {
+				--bs-btn-color: #000;
+				--bs-btn-hover-color: #000;
+				--bs-btn-active-color: #000;
+				--bs-btn-hover-border-color: #fff;
+				--bs-btn-active-border-color: #fff;
+				--bgColor: #fff;
+
+				position: relative;
+				z-index: 10;
+			}
+		}
+		.toggle-menu-mobile {
+			--color: #fff;
+
+			position: relative;
+			z-index: 10;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

@@ -1,0 +1,98 @@
+// start .sOurTrips
+.sOurTrips {
+	--sPT: #{rem(30)};
+	--sPB: #{rem(33)};
+	--sTPB: #{rem(33)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(44)};
+		--sPB: #{rem(40)};
+	}
+	&__container {
+		position: relative;
+		.line {
+			position: absolute;
+			top: rem(50);
+			right: 0;
+			z-index: -1;
+		}
+	}
+	.section-title{
+		margin-right: rem(8);
+		h2 {
+			margin-bottom: 0;
+		}
+		&__arrow {
+			display: flex;
+		}
+		&__row {
+			--bs-gutter-y: #{rem(20)};
+
+			margin-bottom: rem(40);
+			align-items: flex-end;
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(51.500);
+			}
+		}
+		.swiper-button-hand {
+			--swiperBorderColorDef: #{$primary};
+			--swiperColorDef: #{$primary};
+			--swiperBgDef: transparent;
+			--swiperBgDefHover: #{$primary};
+			--swiperColorDefHover: #fff;
+		}
+		&__link {
+			font-weight: 700;
+			position: relative;
+			&:after {
+				@include mt;
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: transparent;
+			}
+			&:hover, &.active {
+				&:after {
+					background-color: $primary;
+				}
+			}
+		}
+	}
+	&__slider {
+		margin-right: rem(-8);
+		margin-bottom: rem(30);
+	}
+	&__slide {
+		margin-right: rem(8);
+		width: calc(100% - rem(8));
+		@include media-breakpoint-up(sm) {
+			width: calc(100% / 2 - rem(8));
+		}
+		@include media-breakpoint-up(lg) {
+			width: calc(100% / 3 - rem(8));
+		}
+		@include media-breakpoint-up(xl) {
+			width: calc(100% / 4 - rem(8));
+		}
+	}
+	&__btn {
+		--bs-btn-padding-y: #{rem(20)};
+		--bgColor: transparent;
+
+		width: 100%;
+		&:not(:hover) {
+			background-color: $gray-100;
+		}
+		&:before {
+			border-right: 1px solid $primary;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sOurTrips

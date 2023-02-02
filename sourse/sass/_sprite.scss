@@ -7,6 +7,14 @@
 	fill: currentColor;
 }
 
+.icon-arrow-left {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-arrow-right {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
 .icon-basket {
 	font-size:math.div(24,10)*1rem;
 	width: math.div(22,24)*1em;
@@ -24,6 +32,10 @@
 	width: math.div(24,24)*1em;
 }
 .icon-telegram {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-users {
 	font-size:math.div(16,10)*1rem;
 	width: math.div(16,16)*1em;
 }

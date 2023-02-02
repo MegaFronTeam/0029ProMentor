@@ -1,9 +1,25 @@
 mixin footer()
 	+b.FOOTER.footer.section
+		+img('img/svg/logo-lg.svg').logo
 		.container
 			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+				.col-lg-6.order-2.order-lg-1
+					ul
+						li: a(href="#") Походы
+						li: a(href="#") Образовательные программы
+						li: a(href="#") О нас
+				.col-lg-auto.ms-lg-auto.order-1.order-lg-2
+						+e.btn.btn.btn-outline-primary.base-btn(href='#') Бронирование
+				.col-lg-6.order-3.order-lg-3
+					+e.tel(href='tel:89785698899') 8 978 569 88 99
+				.col-lg-auto.ms-lg-auto.order-4.order-lg-4
+						+e.email(href='mailto:sample@sample.com') sample@sample.com
+				.col-lg-6.order-5.order-lg-5
+					+e.caption Копирование материала запрещено законом. Все авторские права защищены. © 
+						span  
+				.col-lg-auto.ms-lg-auto.order-last
+						+e.inner-row.row
+							.col-auto
+								+e.link(href='#') Оферта
+							.col-auto
+								+e.link(href='#') Политика конфиденциальности
