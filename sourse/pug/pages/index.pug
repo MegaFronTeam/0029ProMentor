@@ -13,6 +13,8 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/footer/_footer.pug
 
+include ../blocks/sInfo/_sInfo.pug
+include ../blocks/sForm/_sForm.pug
 include ../blocks/sOurTrips/_sOurTrips.pug
 include ../blocks/sEducationalPrograms/_sEducationalPrograms.pug
 include ../blocks/sGalleryBlock/_sGalleryBlock.pug
@@ -32,6 +34,8 @@ block pagecontent
 		+top-nav('true')
 	main
 		+headerBlock 
+		+sInfo
+		+sForm
 		+sOurTrips
 		+sEducationalPrograms
 		+sGalleryBlock

@@ -382,7 +382,6 @@ function eventHandler() {
 
 	const sOurTripsSwiper = new Swiper('.sOurTrips__slider--js', {
 		slidesPerView: 'auto',
-		freeMode: true,
 		navigation: {
 			nextEl: '.sOurTrips__slider--js .swiper-button-next',
 			prevEl: '.sOurTrips__slider--js .swiper-button-prev',

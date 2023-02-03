@@ -1,13 +1,30 @@
 mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sForm
+		+img('img/svg/top-border.svg').top-img
+		+img('img/svg/bottom-border.svg').bottom-img
+		picture.forest
+			source(media="(min-width: 576px)", srcset="img/svg/forest.svg")
+			img(src='img/svg/forest-sm.svg' alt='forest')
+		+e.container.container
+			+img('img/svg/bg-line-4.svg').line-1
+			+img('img/svg/bg-line-4.svg').line-2
+			+b.section-title
+				h2 Найдите<br>время для самого главного
 				
 			+e.row.row
-			+form-wrap
-				+input("",'')
-				+input("",'')
-				+input("",'')
+				.col-lg-3.ms-lg-auto
+					+e.title Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании
+					p Оставьте ваши контактные данные и мы свяжемся с вами любым удобным для вас способом
+				.col-lg-6
+					+form-wrap
+						+e.row.row
+							.col-lg-6
+								+input('Ваше имя', 'text')
+							.col-lg-6
+								+input('E-mail', 'email')
+							.col-lg-6
+								+e.btn.btn.btn-outline-primary.base-btn(type='submit') Записаться
+							.col-lg-6
+								+policy
 	// end sForm

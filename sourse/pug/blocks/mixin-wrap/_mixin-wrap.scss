@@ -120,7 +120,7 @@
 		content: '';
 		position: absolute;
 		display: block;
-		background-color: var(--bgColor, $gray-200);
+		background-color: var(--bgColor, var(--bs-btn-border-color));
 		padding-right: rem(10);
 		width: calc(100% - 9px);
 		height: calc(100% + 2px);
