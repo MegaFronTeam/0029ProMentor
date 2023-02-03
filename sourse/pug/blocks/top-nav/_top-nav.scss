@@ -5,6 +5,19 @@
 		padding-top: rem(27);
 		padding-bottom: rem(27);
 	}
+	&__container {
+		position: relative;
+		.line {
+			position: absolute;
+			right: -100px;
+    	top: -50px;
+			display: none;
+			pointer-events: none;
+			@include media-breakpoint-up(lg) {
+				display: block;
+			}
+		}
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: #{rem(29)};

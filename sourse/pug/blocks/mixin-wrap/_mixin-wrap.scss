@@ -350,3 +350,17 @@
 		}
 	}
 }
+
+.page-head {
+	padding-top: rem(25);
+	padding-bottom: rem(25);
+	@include media-breakpoint-up(lg) {
+		padding-top: rem(37);
+		padding-bottom: rem(26.500);
+	}
+	h1 {
+		margin-bottom: 0;
+		line-height: 0.968em;
+		color: $gray-800;
+	}
+}

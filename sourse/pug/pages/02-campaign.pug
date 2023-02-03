@@ -1,0 +1,40 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/footer/_footer.pug
+
+include ../blocks/sCampaign/_sCampaign.pug
+include ../blocks/sGalleryBlock/_sGalleryBlock.pug
+
+block variables
+	- let  mainPage= '' 
+	- let  bg= '02-campaign.jpg'
+
+block title
+	- let  title= 'Походы'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+header()
+		+top-nav()
+	main
+		+page-head('Походы')
+		+sCampaign
+		+sGalleryBlock
+	+footer()
+      
+
+
+

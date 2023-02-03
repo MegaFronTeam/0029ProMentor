@@ -20,7 +20,8 @@ mixin mob-mnu()
 mixin top-nav(light) 
 	// start top-nav
 	+b.top-nav.block-with-lazy
-		.container
+		+e.container.container
+			img(src='img/svg/bg-line-5.svg').line
 			+e.row.row
 				.col-12.col-lg-6.order-last.order-lg-first
 					+e.logo(href='#')
