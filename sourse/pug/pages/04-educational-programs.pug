@@ -13,31 +13,25 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/footer/_footer.pug
 
-include ../blocks/sInfo/_sInfo.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sOurTrips/_sOurTrips.pug
-include ../blocks/sEducationalProgramsBlock/_sEducationalProgramsBlock.pug
+include ../blocks/sEducationalPrograms/_sEducationalPrograms.pug
 include ../blocks/sGalleryBlock/_sGalleryBlock.pug
 
 block variables
-	- let  mainPage= 'main-page' 
-	- let  bg= 'main.jpg'
+	- let  mainPage= '' 
+	- let  bg= ''
 
 block title
-	- let  title= 'Главная'
+	- let  title= 'Образовательные программы'
 	title= title
 block pagecontent
 	//- +mob-mnu()
 	
 	
-	+header().--light
-		+top-nav('true')
+	+header()
+		+top-nav()
 	main
-		+headerBlock 
-		+sInfo
-		+sForm
-		+sOurTrips
-		+sEducationalProgramsBlock
+		+page-head('Образовательные программы')
+		+sEducationalPrograms
 		+sGalleryBlock
 	+footer()
       

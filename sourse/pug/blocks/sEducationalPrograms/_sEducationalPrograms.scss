@@ -1,12 +1,19 @@
 // start .sEducationalPrograms
 .sEducationalPrograms {
-	--sPT: #{rem(33)};
-	--sPB: #{rem(20)};
-	--sTPB: #{rem(39)};
+	--sPT: #{rem(0)};
+	--sPB: #{rem(30)};
 	@include media-breakpoint-up(lg) {
-		--sPT: #{rem(40)};
-		--sPB: #{rem(41)};
-		--sTPB: #{rem(47)};
+		--sPB: #{rem(94)};
+	}
+	&__wrap {
+		border-top: 1px solid $primary;
+	}
+	.info-card {
+		border-bottom: 1px solid $primary;
+		padding: rem(20) 0;
+		@include media-breakpoint-up(md) {
+			padding: rem(40) rem(20);
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

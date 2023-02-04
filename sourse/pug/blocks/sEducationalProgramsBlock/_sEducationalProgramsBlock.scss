@@ -1,0 +1,18 @@
+// start .sEducationalProgramsBlock
+.sEducationalProgramsBlock {
+	--sPT: #{rem(33)};
+	--sPB: #{rem(20)};
+	--sTPB: #{rem(39)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(40)};
+		--sPB: #{rem(41)};
+		--sTPB: #{rem(47)};
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sEducationalProgramsBlock
