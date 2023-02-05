@@ -1,4 +1,4 @@
-mixin sOurTrips(data)
+mixin sOurTrips(title='Наши походы')
 	// start sOurTrips
 	+b.SECTION.sOurTrips.section#sOurTrips&attributes(attributes)
 		+e.container.container
@@ -7,7 +7,7 @@ mixin sOurTrips(data)
 				+b.section-title
 					+e.row.row
 						.col-lg
-							h2 Наши походы
+							h2!=title 
 						.col-lg-auto
 							+e.arrow
 								+arrow
