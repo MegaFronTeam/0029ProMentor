@@ -1,0 +1,51 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/footer/_footer.pug
+
+include ../blocks/sHikeBlock/_sHikeBlock.pug
+include ../blocks/sGalleryBlock/_sGalleryBlock.pug
+include ../blocks/sEducationalProgramsBlock/_sEducationalProgramsBlock.pug
+include ../blocks/sSignUp/_sSignUp.pug
+
+block variables
+	- let  mainPage= 'hike-page' 
+	- let  bg= ''
+
+block title
+	- let  title= 'Древняя россия. Истории и ламповые посиделки у костра'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+header()
+		+top-nav()
+	main
+		+innerPageHead('Древняя россия. Истории и&nbsp;ламповые посиделки у&nbsp;костра')
+			+infoItem('Время проведения', '24 июня 16:00 до 25 июня 20:00')
+			+infoItem('Количество мест', '15 человек&nbsp;<span> (Осталось 7 мест)</span>', true)
+			+infoItem('Место проведения', 'Подмосковье, д. Веселые Луки')
+		+sHikeBlock
+		+sEducationalProgramsBlock('Мероприятия и образовательные программы')
+			+ddGroupItem('Заголовок для образовательной программы')
+				+infoCard()
+			+ddGroupItem('Готовка в полевых условиях', 'active')
+				+infoCard()
+		+sSignUp
+		+sGalleryBlock
+	+footer()
+      
+
+
+

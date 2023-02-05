@@ -1,18 +1,9 @@
-mixin sEducationalProgramsBlock(data)
+mixin sEducationalProgramsBlock(title='Образовательные программы')
 	// start sEducationalProgramsBlock
-	+b.SECTION.sEducationalPrograms.section#sEducationalPrograms&attributes(attributes)
+	+b.SECTION.sEducationalProgramsBlock.section#sEducationalProgramsBlock&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Образовательные программы
+				h2!= title
 			+ddGroup
-				+ddGroupItem('Заголовок для образовательной программы ')
-					+infoCard()
-				+ddGroupItem('Заголовок для образовательной программы в одну или несколько строк для наглядности отображения')
-					+infoCard()
-				+ddGroupItem('Заголовок для образовательной программы ')
-					+infoCard()
-				+ddGroupItem('Готовка в полевых условиях', 'active')
-					+infoCard()
-				+ddGroupItem('Образовательная программа')
-					+infoCard()
+				block
 	// end sEducationalProgramsBlock

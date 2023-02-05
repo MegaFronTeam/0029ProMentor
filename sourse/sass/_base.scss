@@ -545,3 +545,21 @@ iframe {
 h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 }
+
+.hike-page {
+	.sEducationalProgramsBlock {
+		--sPT: #{rem(21.500)};
+		--sPB: #{rem(35)};
+		@include media-breakpoint-up(lg) {
+			--sPB: #{rem(77)};
+		}
+		h2 {
+			@include rfs('32px');
+		}
+	}
+	.sGalleryBlock {
+		@include media-breakpoint-up(lg) {
+			--sPT: 0px;
+		}
+	}
+}

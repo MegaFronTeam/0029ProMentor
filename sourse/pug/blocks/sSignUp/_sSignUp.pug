@@ -1,0 +1,27 @@
+mixin sSignUp(data)
+	// start sSignUp
+	+b.SECTION.sSignUp.section#sSignUp&attributes(attributes)
+		.container
+			+e.row.row
+				.col-lg-3
+					h4 Запишитесь в&nbsp;поход
+				.col-lg-3
+					+e.wrap
+						+e.text Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете<br>с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании
+						p Оставьте ваши контактные данные и&nbsp;мы&nbsp;свяжемся с&nbsp;вами любым удобным для вас способом
+				.col-lg-6
+					+form-wrap
+						+e.row.row
+							.col-lg-6
+								+input('Ваше ФИО', 'text')
+							.col-lg-6
+								+input('Ваш E-mail', 'email')
+							.col-lg-6
+								+input('Количество взрослых', 'text')
+							.col-lg-6
+								+input('Количество детей', 'text')
+							.col-lg-6
+								+e.btn.btn.btn-outline-secondary.base-btn(type='submit') Записаться
+							.col-lg-6
+								+policy()
+	// end sSignUp

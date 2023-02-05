@@ -1,0 +1,78 @@
+// start .sSignUp
+.sSignUp {
+	--sPT: #{rem(35)};
+	--sPB: #{rem(0)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(77)};
+		margin-bottom: rem(-23.500);
+	}
+	&__row{
+		--bs-gutter-x: #{rem(42)};
+		--bs-gutter-y: #{rem(20)};
+
+	}
+	h4 {
+
+	}
+	&__wrap {
+		p {
+			font-size: rem(11);
+			font-weight: 600;
+			line-height: 1.18em;
+			margin-bottom: 0;
+		}
+	}
+	&__text {
+		font-family: $font-family-monospace;
+		line-height: 1.3em;
+		margin-bottom: rem(29);
+	}
+	.form-wrap {
+		padding: rem(20);
+		border-radius: 24px;
+		background-color: $gray-700;
+		&__row {
+			--bs-gutter-x: #{rem(20)};
+			--bs-gutter-y: #{rem(20)};
+		}
+		&__input {
+			border-color: $gray-800;
+			color: $gray-800;
+			&::placeholder {
+				color: $gray-800;
+			}
+			&:focus, &.active {
+				background-color: $gray-100;
+				border-color: transparent;
+				& ~ .form-wrap__input-title {
+					color: rgba($color: $gray-800, $alpha: .3);
+				}
+			}
+		}
+		&__btn {
+			--bs-btn-padding-y: #{rem(16)};
+			--bs-btn-color: #{$gray-900};
+			--bs-btn-hover-color: #{$gray-900};
+			--bs-btn-active-color: #{$gray-900};
+
+			width: 100%;
+		}
+		&__policy {
+			color: $gray-100;
+			a {
+				color: $gray-200;
+				&:hover {
+					color: $gray-300;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSignUp

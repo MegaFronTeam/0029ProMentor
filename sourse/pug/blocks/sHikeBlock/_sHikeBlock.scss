@@ -1,0 +1,60 @@
+// start .sHikeBlock
+.sHikeBlock {
+	--sPT: #{rem(17.5)};
+	--sPB: #{rem(21.5)};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	&__img-wrap {
+		@include block(1,1);
+		border-radius: 24px;
+		overflow: hidden;
+	}
+	&__text {
+		font-size: rem(18);
+		font-weight: 500;
+		line-height: 1.22em;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(40);
+		}
+	}
+	&__btn {
+		--bs-btn-padding-y: #{rem(16)};
+		--bs-btn-color: #fff;
+		--bs-btn-hover-color: #fff;
+		--bs-btn-active-color: #fff;
+
+		width: 100%;
+		margin-bottom: rem(25);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(57);
+		}
+	}
+	&__inner-row{ 
+		--bs-gutter-x: #{rem(34)};
+		--bs-gutter-y: #{rem(20)};
+	}
+	&__item {
+		h6 {
+			color: $gray-900;
+			margin-bottom: rem(21);
+		}
+		p {
+			font-family: $font-family-monospace;
+			font-size: rem(13);
+			line-height: 1.3em;
+			margin-bottom: 0;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sHikeBlock

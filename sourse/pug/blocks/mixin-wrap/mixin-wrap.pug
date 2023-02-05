@@ -75,3 +75,26 @@ mixin card(img, title, date='24 - 28 мая 2023', count='42')
 					+e.count
 						+icon('users')
 						!= count
+
+mixin innerPageHead(title)
+	+b.inner-page-head
+		.container
+			+e.back-btn(href='#'): +icon('back-btn')
+			.row
+				.col-lg-9
+					h1.h2!= title
+				.col-lg-3
+					+infoBlock()
+						block
+
+mixin infoBlock()
+	+b.info
+		block
+
+mixin infoItem(title, text, icon)
+	+e.info-item
+		+e.title!=title
+		+e.text
+			if icon
+				+icon('users')
+			!= text
