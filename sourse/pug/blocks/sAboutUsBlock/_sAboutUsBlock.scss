@@ -1,0 +1,163 @@
+// start .sAboutUsBlock
+.sAboutUsBlock {
+	--sPT: #{rem(45)};
+	--sPB: #{rem(45)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(59)};
+		--sPB: #{rem(105)};
+	}
+	&__container{
+		position: relative;
+		.bg-line {
+			position: absolute;
+			right: -80px;
+			top: 590px;	
+			z-index: -1;
+			display: none;
+			@include media-breakpoint-up(lg) {
+				display: block;
+			}
+		}
+	}
+	&__contanct-us {
+		max-width: rem(680);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(40);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(100);
+		}
+		.row {
+			--bs-gutter-y: #{rem(20)};
+		}
+		h5 {
+			text-transform: initial;
+			margin-bottom: 0;
+		}
+	}
+	&__item-wrap {
+		--bs-gutter-y: #{rem(32)};
+		margin-top: calc(var(--bs-gutter-y) * -1);
+		& > * {
+			margin-top: var(--bs-gutter-y);
+		}
+	}
+	&__title {
+		font-family: $font-family-monospace;
+		font-size: rem(13);
+		color: $gray-800;
+		margin-bottom: rem(8);
+		line-height: 1.3em;
+	}
+	&__text {
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: 0.968em;
+		@include media-breakpoint-up(lg) {
+			font-size: rem(30);
+		}
+	}
+	&__wrap {
+		max-width: rem(680);
+		margin-left: auto;
+		margin-right: auto;
+		h5 {
+			text-transform: initial;
+			margin-bottom: rem(20);
+		}
+		p {
+			font-family: $font-family-monospace;
+			margin-bottom: 0;
+			line-height: 1.3em;
+		}
+	}
+	&__description {
+		max-width: rem(680);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(40 );
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(87);
+		}
+		.row {
+			--bs-gutter-y: #{rem(20)};
+		}
+		p {
+			font-family: $font-family-monospace;
+			line-height: 1.3em;
+			margin-bottom: rem(20);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(30);
+				max-width: rem(298);
+			}
+		}
+		img {
+			width: 100%;
+			max-width: rem(340);
+			border-radius: 24px;
+		}
+	}
+	&__author {
+		font-size: rem(11);
+		font-weight: 600;
+		color: $gray-700;
+		line-height: 1.18em;
+	}
+	&__row {
+		--bs-gutter-x: #{rem(0)};
+		--bs-gutter-y: #{rem(20)};
+
+		margin-bottom: rem(50);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(99);
+		}
+	}
+	&__col {
+		@include media-breakpoint-up(lg) {
+			@for $i from 1 through 4 {
+				&:nth-child(#{$i + 1}) {
+					.sAboutUsBlock__advantages {
+						margin-top: calc(#{rem(87)} * #{$i});
+					}
+				}
+			}
+		}
+	}
+	&__advantages {
+		@include media-breakpoint-up(lg) {
+			text-align: right;
+		}
+		span {
+			font-weight: 700;
+			font-size: rem(70);
+			line-height: 0.968em;
+			color: #ffe9c8;
+			text-shadow:
+				-1px 0px 0px #814500,
+				1px 0px 0px #814500,
+				0px -1px 0px #814500,
+				0px 1px 0px #814500;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(90);
+			}	
+		}
+		p {
+			font-size: rem(18);
+			font-weight: 600;
+			line-height: 1.20em;
+			text-align: left;
+			margin-bottom: 0;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(24);
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAboutUsBlock

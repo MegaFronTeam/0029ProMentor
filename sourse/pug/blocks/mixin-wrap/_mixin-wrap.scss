@@ -374,16 +374,77 @@
 }
 
 .page-head {
+	position: relative;
 	padding-top: rem(25);
 	padding-bottom: rem(25);
 	@include media-breakpoint-up(lg) {
 		padding-top: rem(37);
 		padding-bottom: rem(26.500);
 	}
+	.line-bg {
+		position: absolute;
+		right: -120px;
+    top: -60px;
+		display: none;
+		@include media-breakpoint-up(xl) {
+			display: block;
+		}
+	}
 	h1 {
 		margin-bottom: 0;
 		line-height: 0.968em;
 		color: $gray-800;
+	}
+	&__custom-title {
+		span {
+			&.text {
+				@include media-breakpoint-up(xl) {
+					display: block;
+					max-width: max-content;
+					margin-left: auto;
+					margin-right: 80px;
+				}
+			}
+			&.text2 {
+				@include media-breakpoint-up(xl) {
+					display: block;
+					max-width: max-content;
+					margin-left: auto;
+				}
+				span.img img {
+					right: rem(-80);
+    			top: rem(-50);
+					@include media-breakpoint-up(xxl) {
+						right: rem(-146);
+					}
+				}
+			}
+			&.img {
+				color: $secondary;
+				position: relative;
+				&:hover {
+					img {
+						opacity: 1;
+					}
+				}
+				img {
+					@include mt;
+					position: absolute;
+					width: rem(356);
+					height: rem(272);
+					object-fit: cover;
+					right: rem(48);
+    			top: rem(-180);
+					border-radius: 121px;
+					pointer-events: none;
+					opacity: 0;
+					display: none;
+					@include media-breakpoint-up(xl) {
+						display: block;
+					}
+				}
+			}
+		}
 	}
 }
 

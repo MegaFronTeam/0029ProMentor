@@ -15,25 +15,24 @@ include ../blocks/footer/_footer.pug
 
 include ../blocks/sOurTrips/_sOurTrips.pug
 include ../blocks/sGalleryBlock/_sGalleryBlock.pug
+include ../blocks/sAboutUsBlock/_sAboutUsBlock.pug
 
 block variables
-	- let  mainPage= '' 
-	- let  bg= '05-program.jpg'
+	- let  mainPage= 'about-us-page' 
+	- let  bg= ''
 
 block title
-	- let  title= 'Программа'
+	- let  title= 'О нас'
 	title= title
 block pagecontent
 	//- +mob-mnu()
 	
 	
-	+header()
-		+top-nav()
+	+header().--light
+		+top-nav('true')
 	main
-		+innerPageHead('Заголовок для образовательной программы')
-			+infoItem('Для кого', 'Для детей от 3 до 8 лет')
-		+sContent
-		+sOurTrips('Походы с&nbsp;этой программой')
+		+page-head('', 'true')
+		+sAboutUsBlock
 		+sGalleryBlock
 	+footer()
       

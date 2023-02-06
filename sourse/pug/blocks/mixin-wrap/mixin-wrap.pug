@@ -38,13 +38,17 @@ mixin search()
 			button 
 				+icon("search")
 
-mixin page-head(t)
+mixin page-head(t, isCustom)
 	+b.page-head
 		- let l = items.length
 		.container
 			//- +breadcrumb('Главная',...items)
 
-			h1= t
+			if isCustom
+				img(src="img/svg/bg-line-5.svg", alt="").line-bg
+				+e.H1.custom-title <span class='text'>&laquo;В&nbsp;яркий путь&raquo;&nbsp;&mdash; это</span>туристическо-патриотический клуб, <span class='img'> который обучает #[img(src="img/sContent-img-3.jpg", alt="")]</span>навыкам выживания, развития самоорганизации, самодисциплины, расширения кругозора, познания в&nbsp;области географии и&nbsp;исторических <span class='text2'>аспектов<span class='img'> нашей страны #[img(src="img/sAbout-img-1.jpg", alt="")]</span></span>
+			else
+				h1!= t
 
 mixin infoCard(head, img='info-card-img.jpg')
 	+b.info-card
