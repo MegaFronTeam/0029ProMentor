@@ -100,15 +100,17 @@
 		}
 	}
 	&__btn {
+		--bs-btn-hover-color: #{$primary};
+		--bs-btn-active-color: #{$primary};
 		--bs-btn-padding-y: #{rem(20)};
 		--bgColor: transparent;
 
 		width: 100%;
-		&:not(:hover) {
-			background-color: $gray-100;
-		}
 		&:before {
 			border-right: 1px solid $primary;
+		}
+		&.base-btn {
+			background-color: $gray-100;
 		}
 	}
 	.tabs__content {
