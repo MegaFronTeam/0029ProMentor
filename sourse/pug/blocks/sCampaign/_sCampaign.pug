@@ -2,45 +2,84 @@ mixin sCampaign(data)
 	// start sCampaign
 	+b.sCampaign.section#sCampaign&attributes(attributes)
 		.container
-			+e.row.row
-				.col-auto
-					+e.link.active(href='#') Будущие
-				.col-auto
-					+e.link(href='#') Уже прошли
-			+e.grid
-				+e.grid-item 
-					+card('card-img-5.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-				+e.grid-item 
-					+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
-				+e.grid-item
-					+card('card-img-6.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-				+e.grid-item
-					+card('card-img-4.jpg', 'Слабоумие и отвага')
-				+e.grid-item
-					+card('card-img-7.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-				+e.grid-item
-					+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
-				+e.grid-item
-					+card('card-img-8.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-				+e.grid-item
-					+card('card-img-7.jpg', 'Слабоумие и отвага')
-				+e.grid-item
-					+card('card-img-9.jpg', 'Слабоумие и отвага')
-				+e.grid-item
-					+card('card-img-10.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-			.row
-				.col-lg-6.ms-auto
-					+e.text Текст для разбавления плитки и&nbsp;с&nbsp;призывом к&nbsp;дейсвию для наглядности отображения контента в&nbsp;одну или несколько строк. Пример отображения на&nbsp;странице во&nbsp;всю длину.
-			+e.grid
-				+e.grid-item 
-					+card('card-img-11.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-				+e.grid-item 
-					+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
-				+e.grid-item
-					+card('card-img-8.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-				+e.grid-item
-					+card('card-img-4.jpg', 'Слабоумие и отвага')
-				+e.grid-item
-					+card('card-img-6.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
-			+e.btn.btn.btn-outline-primary.base-btn(href='#') Посмотреть все
+			.tabs
+				+e.row.row.tabs__caption
+					+e.col.col-auto.tabs__btn.active
+						+e.link(href='#') Будущие
+					+e.col.col-auto.tabs__btn
+						+e.link(href='#') Уже прошли
+				.tabs__content.active
+					+e.grid
+						+e.grid-item 
+							+card('card-img-5.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item 
+							+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+						+e.grid-item
+							+card('card-img-6.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-4.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-7.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+						+e.grid-item
+							+card('card-img-8.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-7.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-9.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-10.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+					.row(data-aos="fade-up" data-aos-delay="0")
+						.col-lg-6.ms-auto
+							+e.text Текст для разбавления плитки и&nbsp;с&nbsp;призывом к&nbsp;дейсвию для наглядности отображения контента в&nbsp;одну или несколько строк. Пример отображения на&nbsp;странице во&nbsp;всю длину.
+					+e.grid
+						+e.grid-item 
+							+card('card-img-11.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item 
+							+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+						+e.grid-item
+							+card('card-img-8.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-4.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-6.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+					+e.btn.btn.btn-outline-primary.base-btn(href='#' data-aos="fade-up" data-aos-delay="0") Посмотреть все
+				.tabs__content
+					+e.grid
+						+e.grid-item 
+							+card('card-img-5.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item 
+							+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+						+e.grid-item
+							+card('card-img-6.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-7.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-4.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-8.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+						+e.grid-item
+							+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+							+card('card-img-7.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-9.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-10.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+					.row(data-aos="fade-up" data-aos-delay="0")
+						.col-lg-6.ms-auto
+							+e.text Текст для разбавления плитки и&nbsp;с&nbsp;призывом к&nbsp;дейсвию для наглядности отображения контента в&nbsp;одну или несколько строк. Пример отображения на&nbsp;странице во&nbsp;всю длину.
+					+e.grid
+						+e.grid-item 
+							+card('card-img-11.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item
+							+card('card-img-8.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+						+e.grid-item 
+							+card('card-img-1.jpg', 'Незабываемые леса подмосковья')
+						+e.grid-item
+							+card('card-img-4.jpg', 'Слабоумие и отвага')
+						+e.grid-item
+							+card('card-img-6.jpg', 'Древняя россия. Истории и ламповые посиделки у костра')
+					+e.btn.btn.btn-outline-primary.base-btn(href='#' data-aos="fade-up" data-aos-delay="0") Посмотреть все
 	// end sCampaign

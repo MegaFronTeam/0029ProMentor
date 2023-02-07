@@ -12,15 +12,14 @@
 			margin-bottom: rem(30);
 		}
 	}
-	&__link {
-		font-weight: 700;
+	&__col {
 		position: relative;
 		&:after {
 			@include mt;
 			content: '';
 			position: absolute;
 			display: block;
-			width: 100%;
+			width: calc(100% - var(--bs-gutter-x));
 			height: 1px;
 			background-color: transparent;
 		}
@@ -29,6 +28,9 @@
 				background-color: $primary;
 			}
 		}
+	}
+	&__link {
+		font-weight: 700;
 	}
 	&__grid {
 		display: grid;
@@ -88,6 +90,8 @@
 		}
 	}
 	&__btn {
+		--bs-btn-hover-color: #{$gray-900};
+		--bs-btn-active-color: #{$gray-900};
 		--bs-btn-padding-y: #{rem(20)};
 		--bgColor: transparent;
 

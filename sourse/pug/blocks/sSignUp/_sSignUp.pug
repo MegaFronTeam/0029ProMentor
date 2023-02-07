@@ -4,13 +4,13 @@ mixin sSignUp(data)
 		.container
 			+e.row.row
 				.col-lg-3
-					h4 Запишитесь в&nbsp;поход
+					h4(data-aos="fade-up" data-aos-delay="0") Запишитесь в&nbsp;поход
 				.col-lg-3
-					+e.wrap
+					+e.wrap(data-aos="fade-up" data-aos-delay="0")
 						+e.text Вы&nbsp;хотите пойти в&nbsp;поход но&nbsp;не&nbsp;знаете<br>с&nbsp;чего начать? Спросите нас, мы&nbsp;поможем вам подобрать идеальный вариант, исходя из&nbsp;ваших навыков. Поможем подобрать программу как для семьи так и&nbsp;для большой компании
 						p Оставьте ваши контактные данные и&nbsp;мы&nbsp;свяжемся с&nbsp;вами любым удобным для вас способом
 				.col-lg-6
-					+form-wrap
+					+form-wrap(data-aos="fade-up" data-aos-delay="0")
 						+e.row.row
 							.col-lg-6
 								+input('Ваше ФИО', 'text')

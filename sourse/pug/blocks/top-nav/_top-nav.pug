@@ -29,6 +29,8 @@ mixin top-nav(light)
 				+e.col.col.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
+							+e.logo(href='#').d-lg-none
+								+img(`img/svg/dark-logo.svg`)
 							+menu-toggle()
 							+mnu()
 				.col.col-lg-auto.d-lg-none

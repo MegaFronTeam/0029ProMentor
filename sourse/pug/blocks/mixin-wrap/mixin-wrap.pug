@@ -39,7 +39,7 @@ mixin search()
 				+icon("search")
 
 mixin page-head(t, isCustom)
-	+b.page-head
+	+b.page-head(data-aos="fade-up" data-aos-delay="0")
 		- let l = items.length
 		.container
 			//- +breadcrumb('Главная',...items)
@@ -51,13 +51,13 @@ mixin page-head(t, isCustom)
 				h1!= t
 
 mixin infoCard(head, img='info-card-img.jpg')
-	+b.info-card
+	+b.info-card(data-aos="fade-up" data-aos-delay="0")
 		if head
-			.h6!=head
-			+e.text Для детей от 3 до 8 лет
+			a.h6(href='#' data-aos="fade-up" data-aos-delay="0")!=head
+			+e.text(data-aos="fade-up" data-aos-delay="0") Для детей от 3 до 8 лет
 		.row
 			.col-lg-6
-				+e.img-wrap
+				+e.img-wrap(href='#')
 					.img-wrap-center
 						+img(`img/${img}`, 'bg')
 			.col-lg-6
@@ -66,7 +66,7 @@ mixin infoCard(head, img='info-card-img.jpg')
 					+e.btn.btn.btn-outline-primary.base-btn(href='#') Узнать больше
 
 mixin card(img, title, date='24 - 28 мая 2023', count='42')
-	+b.card.bg-wrap(href='#')
+	+b.card.bg-wrap(href='#' data-aos="fade-up" data-aos-delay="0")
 		+img(`img/${img}`, 'bg').picture-bg
 		+e.wrap
 			.h6!=title
@@ -84,7 +84,7 @@ mixin innerPageHead(title)
 	+b.inner-page-head
 		.container
 			+e.back-btn(href='#'): +icon('back-btn')
-			.row
+			.row(data-aos="fade-up" data-aos-delay="0")
 				.col-lg-9
 					h1.h2!= title
 				.col-lg-3
@@ -96,7 +96,7 @@ mixin infoBlock()
 		block
 
 mixin infoItem(title, text, icon)
-	+e.info-item
+	+e.info-item(data-aos="fade-up" data-aos-delay="0")
 		+e.title!=title
 		+e.text
 			if icon

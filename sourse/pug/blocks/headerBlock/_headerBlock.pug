@@ -4,9 +4,9 @@ mixin headerBlock()
 		+e.img-wrap.picture-bg
 			+img('img/headerBlock-bg.jpg', 'bg')
 		+e.container.container
-			+b.section-title
-				h1 #[span.start Самые] интересные походы.<br>Максимум разнообразия #[span.end и увлечений]  
-			+e.row.row
+			+b.section-title(data-aos="fade-up" data-aos-delay="0")
+				h1 #[span.start Самые] интересные походы.<br>Максимум разнообразия #[span.end и&nbsp;увлечений]  
+			+e.row.row(data-aos="fade-up" data-aos-delay="0")
 				.col-lg-6.ms-lg-auto
 					+e.name Бронируйте<br>места
 					p &laquo;В&nbsp;яркий путь&raquo;&nbsp;&mdash; это туристическо-патриотический клуб, который обучает навыкам выживания, развития самоорганизации, самодисциплины, расширения кругозора, познания в&nbsp;области географии и&nbsp;исторических аспектов нашей страны

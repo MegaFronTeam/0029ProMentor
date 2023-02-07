@@ -301,7 +301,7 @@ const $ = jQuery;
 
 function eventHandler() { 
 	JSCCommon.modalCall();
-	// JSCCommon.tabscostume('tabs');
+	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
 	// JSCCommon.sendForm();
@@ -382,6 +382,7 @@ function eventHandler() {
 
 	const sOurTripsSwiper = new Swiper('.sOurTrips__slider--js', {
 		slidesPerView: 'auto',
+		observer: true,
 		navigation: {
 			nextEl: '.sOurTrips__slider--js .swiper-button-next',
 			prevEl: '.sOurTrips__slider--js .swiper-button-prev',
@@ -389,6 +390,17 @@ function eventHandler() {
 	});
 
 	// modal window
+
+	const mainModal = document.querySelector('.page-head__custom-title');
+
+	if(mainModal) {
+		mainModal.addEventListener('mousemove', (e) => {
+			mainModal.style.setProperty('--x', (e.clientX) + 'px');
+			mainModal.style.setProperty('--y', (e.clientY) + 'px');
+		}, { passive: true });
+	}
+
+	AOS.init();
 
 };
 if (document.readyState !== 'loading') {

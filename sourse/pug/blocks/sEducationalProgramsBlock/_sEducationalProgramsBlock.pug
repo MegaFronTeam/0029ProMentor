@@ -2,7 +2,7 @@ mixin sEducationalProgramsBlock(title='Образовательные прогр
 	// start sEducationalProgramsBlock
 	+b.SECTION.sEducationalProgramsBlock.section#sEducationalProgramsBlock&attributes(attributes)
 		.container
-			+b.section-title
+			+b.section-title(data-aos="fade-up" data-aos-delay="0")
 				h2!= title
 			+ddGroup
 				block

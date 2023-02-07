@@ -17,7 +17,7 @@
 	}
 	.top-img, .bottom-img {
 		position: absolute;
-		width: 100%;
+		width: calc(100% + 2px);
 		max-width: rem(1920);
 		left: 50%;
 		transform: translateX(-50%);
@@ -25,6 +25,9 @@
 	}
 	.top-img {
 		top: rem(42);
+		@include media-breakpoint-down(sm) {
+			top: rem(66);
+		}
 	}
 	.bottom-img {
 		bottom: 0;
@@ -32,10 +35,13 @@
 	.forest {
 		z-index: -1;
 		position: absolute;
-		top: -26px;
+		top: -21px;
 		left: 50%;
 		width: 100vw;
 		transform: translateX(-50%);
+		@include media-breakpoint-down(sm) {
+			top: -35px;
+		}
 		@include media-breakpoint-up(md) {
 			left: 43%;
 			width: rem(2033);
@@ -43,6 +49,11 @@
 		}
 		@include media-breakpoint-up(xxl) {
 			left: 50%;
+		}
+		img {
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
 		}
 	}
 	&__container {

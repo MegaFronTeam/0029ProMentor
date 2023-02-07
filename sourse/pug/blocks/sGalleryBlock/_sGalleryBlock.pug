@@ -4,7 +4,7 @@ mixin sGalleryBlock(data)
 		.container
 			+e.wrap
 				+e.slider--js.swiper
-					+b.section-title
+					+b.section-title(data-aos="fade-up" data-aos-delay="0")
 						.row.align-items-end
 							.col
 								h2 Немного наших 
@@ -12,7 +12,7 @@ mixin sGalleryBlock(data)
 							.col-auto.d-none.d-lg-block
 								+e.arrow-wrap
 									+arrow
-					.swiper-wrapper
+					.swiper-wrapper(data-aos="fade-up" data-aos-delay="0")
 						mixin slide(img, text, width, height)
 							+e.slide.swiper-slide(style=`--sWidth: ${width}; --sHeight: ${height};`)
 								+e.img-wrap
