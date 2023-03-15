@@ -12,71 +12,85 @@
 			margin-bottom: rem(30);
 		}
 	}
+	
 	&__col {
-		position: relative;
-		&:after {
-			@include mt;
-			content: '';
-			position: absolute;
-			display: block;
-			width: calc(100% - var(--bs-gutter-x));
-			height: 1px;
-			background-color: transparent;
-		}
-		&:hover, &.active {
-			&:after {
-				background-color: $primary;
-			}
-		}
 	}
 	&__link {
 		font-weight: 700;
+		position: relative;
+		cursor: pointer;
+		@include mt;
+		border-bottom: 1px solid transparent; 
+		&:hover, &.active {
+			border-color: $primary;
+		}
+	}
+	&__col input{
+		@extend .invisible;
+	}
+	input:checked + &__link{
+		border-color: $primary;
 	}
 	&__grid {
 		display: grid;
-		grid-template-columns: 1fr;
+		// grid-template-columns: 1fr;
 		grid-column-gap: rem(8);
 		grid-row-gap: rem(8);
-		@include media-breakpoint-up(md) {
-			grid-template-columns: repeat(2, 1fr);
-		}
 		@include media-breakpoint-up(xl) {
-			grid-template-columns: repeat(4, 1fr);
 		}
+		grid-template-columns: repeat(12, 1fr);
+	}
+	&__text-wrap{
+		grid-column: 1 / 13 ;
+		@include media-breakpoint-up(xl){
+			grid-row: 5;
+		}
+		grid-row: 4;
 	}
 	&__grid-item {
+		&.last-item{
+			display: none;
+			visibility: hidden;
+		}
+
 		@include media-breakpoint-up(xl) {
-			&:nth-child(1) { 
-				grid-area: 1 / 1 / 3 / 3; 
-			}
-			&:nth-child(2) { 
-				grid-area: 1 / 3 / 2 / 4; 
-			}
-			&:nth-child(3) { 
-				grid-area: 1 / 4 / 2 / 5; 
-			}
-			&:nth-child(4) { 
-				grid-area: 2 / 3 / 3 / 4; 
-			}
-			&:nth-child(5) { 
-				grid-area: 2 / 4 / 3 / 5; 
-			}
-			&:nth-child(6) { 
-				grid-area: 3 / 1 / 4 / 2; 
-			}
-			&:nth-child(7) { 
-				grid-area: 3 / 2 / 4 / 3; 
-			}
-			&:nth-child(8) { 
-				grid-area: 4 / 1 / 5 / 2; 
-			}
-			&:nth-child(9) { 
-				grid-area: 4 / 2 / 5 / 3; 
-			}
-			&:nth-child(10) {
-				grid-area: 3 / 3 / 5 / 5; 
+			--large-item: 6;
+			--sm-item: 3;
+		}
+		@include media-breakpoint-only(lg) {
+			--large-item: 8;
+			--sm-item: 4;
+		}
+		@include media-breakpoint-between(sm,lg) {
+			--large-item: 12;
+			--sm-item: 6;
+		}
+		--sm-item: 12;
+		grid-column: span var(--sm-item);
+		
+		@include media-breakpoint-between(sm,lg) {
+			&:nth-child(10n +  2),
+				&:nth-child(10n + 7) {
+					grid-row: span 2;
+					grid-column: var(--large-item) span;
 			}
 		}
+		@include media-breakpoint-only(lg) {
+			&:nth-child(15n +  2),
+				&:nth-child(15n + 9) {
+					grid-row: span 2;
+					grid-column: var(--large-item) span;
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			&:nth-child(10n +  2),
+				&:nth-child(10n + 9) {
+					grid-row: span 2;
+					grid-column: var(--large-item) span;
+			}
+		}
+		
 	}
 	&__text {
 		font-size: rem(18);

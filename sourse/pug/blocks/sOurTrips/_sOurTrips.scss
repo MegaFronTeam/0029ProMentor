@@ -1,4 +1,21 @@
 // start .sOurTrips
+.sOurTrips__col{
+	position: relative;
+			&:after {
+				@include mt;
+				content: '';
+				position: absolute;
+				display: block;
+				width: calc(100% - var(--bs-gutter-x));
+				height: 1px;
+				background-color: transparent;
+			}
+			&:hover, &.active {
+				&:after {
+					background-color: $primary;
+				}
+			}
+}
 .sOurTrips {
 	--sPT: #{rem(30)};
 	--sPB: #{rem(33)};

@@ -4,6 +4,9 @@
 		position: relative;
 		--sp-y: #{$input-padding-y};
 		--fz: #{$input-font-size};
+		p{
+			margin-bottom: 0;
+		}
 	}
 	&__input{
 		// @extend .form-control;
@@ -54,7 +57,7 @@
 		// }
 	}
 	&__input-title {
-		@include a-cent1(y);
+		top: var(--sp-y);
 		position: absolute;
 		// padding-left: $input-padding-x;
 		left: #{$input-padding-x};
@@ -101,7 +104,9 @@
 		font-weight: 600;
 		font-size: rem(11);
 		line-height: 1.18em;
-		
+		p{
+			color: $body-color !important;
+		}
 	}
 }
 

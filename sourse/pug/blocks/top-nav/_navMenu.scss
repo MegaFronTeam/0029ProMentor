@@ -28,29 +28,19 @@
 		position: relative;
 		text-decoration: none;
 		line-height: 1.26;
-		&::before {
-			@include mt;
-			content: '';
-			position: absolute;
-			display: block;
-			width: 100%;
-			height: 1px;
-			left: 0;
-			bottom: 0;
-			background-color: currentColor;
-		}
+		border-bottom: 1px solid ;
 		&:hover {
 			color: $gray-200;
-			&::before {
-				@include media-breakpoint-up(lg) {
-					background-color: transparent;
-				}
+			@include media-breakpoint-up(lg) {
+				border-color: transparent;
 			}
 		}
 	}
 }
 
-
+.current-menu-item a{
+	border-color: transparent !important;
+}
 
 .toggle-menu-mobile {
 	--h: #{rem(1)};

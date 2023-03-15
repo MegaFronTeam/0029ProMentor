@@ -62,7 +62,7 @@
 		flex-direction: column;
 		width: 100%;
 		margin-right: rem(8);
-		max-width: calc(var(--sWidth) * 1px);
+		max-width: calc(var(--sMaxWidth) * 1px);
 		p {
 			text-align: center;
 			color: #fff;

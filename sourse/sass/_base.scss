@@ -505,7 +505,9 @@ iframe {
 // .btn-outline-primary{
 // 	--bs-btn-color: #{$body-color};
 // }
-
+.btn-outline-primary:active{
+	color: #fff !important;
+}
 .btn,
 .form-control,
 .form-select{
@@ -610,3 +612,5 @@ h1,h2,h3,h4,h5,h6 {
 		}
 	}
 }
+
+

@@ -374,6 +374,7 @@ function eventHandler() {
 	const swiper4 = new Swiper('.sGalleryBlock__slider--js', {
 		slidesPerView: 'auto',
 		freeMode: true,
+		loop: true,
 		navigation: {
 			nextEl: '.sGalleryBlock__slider--js .swiper-button-next',
 			prevEl: '.sGalleryBlock__slider--js .swiper-button-prev',
@@ -382,12 +383,14 @@ function eventHandler() {
 
 	const sOurTripsSwiper = new Swiper('.sOurTrips__slider--js', {
 		slidesPerView: 'auto',
-		observer: true,
+		// loop: true,
+		// observer: true,
 		navigation: {
 			nextEl: '.sOurTrips__slider--js .swiper-button-next',
 			prevEl: '.sOurTrips__slider--js .swiper-button-prev',
 		},
 	});
+
 
 	// modal window
 
@@ -401,6 +404,14 @@ function eventHandler() {
 	}
 
 	AOS.init();
+
+
+	$("label .wpcf7-form-control").each(function(){
+		let placeholder = $(this).attr("placeholder");
+		this.insertAdjacentHTML('afterend', `<span class="form-wrap__input-title">${placeholder}</span>`);
+	})
+
+	$('[name="order-val"]').val(window.location.href)
 
 };
 if (document.readyState !== 'loading') {
